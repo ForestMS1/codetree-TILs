@@ -16,14 +16,11 @@ int main() {
     else {
         cout << 0 << " ";
     }
-    if(num[0] == num[1] && num[1] == num[2]) {
+    if(num[0] == num[1] == num[2]) {
         cout << 1;
     }
     else {
         cout << 0;
     }
-    
-
-
     return 0;
 }
