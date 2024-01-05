@@ -11,7 +11,7 @@ int main() {
         }
     }
     else if(c == 'D') {
-        for(int i = n; i >= 0; i--){
+        for(int i = n; i >= 1; i--){
             cout << i << ' ';
         }
     }
