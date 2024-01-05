@@ -9,15 +9,15 @@ int main() {
             cout << 0 << ' ';
             continue;
         }
-        else if(i/100 == 3 || i/10 == 3 || i%1 == 3) {
+        else if(i/100 == 3 || i/10 == 3 || i%10 == 3) {
             cout << 0 << ' ';
             continue;
         }
-        else if(i/100 == 6 || i/10 == 6 || i%1 == 6) {
+        else if(i/100 == 6 || i/10 == 6 || i%10 == 6) {
             cout << 0 << ' ';
             continue;
         }
-        else if(i/100 == 9 || i/10 == 9 || i%1 == 9) {
+        else if(i/100 == 9 || i/10 == 9 || i%10 == 9) {
             cout << 0 << ' ';
             continue;
         }
