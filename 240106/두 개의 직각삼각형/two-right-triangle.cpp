@@ -8,13 +8,13 @@ int main() {
         for(int j = 0; j < n-i; j++) {
             cout << "*";
         }
-        for(int k = 0; k < i; k++) {
+        for(int j = 0; j < i; j++) {
                 cout << " ";
         }
         for(int j = 0; j < i; j++) {
             cout << " ";
         }
-        for(int k = 0; k < n-i; k++) {
+        for(int j = 0; j < n-i; j++) {
                 cout << "*";
         }
         cout << '\n';
