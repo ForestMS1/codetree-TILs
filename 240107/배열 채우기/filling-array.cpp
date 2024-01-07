@@ -11,8 +11,8 @@ int main() {
             break;
         }
     }
-    for(int i = 0; i <= cnt; i++) {
-        cout << arr[cnt-i] << " ";
+    for(int i = cnt; i >= 0; i--) {
+        cout << arr[i] << " ";
     }
     return 0;
 }
