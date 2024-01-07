@@ -5,25 +5,16 @@ int main() {
     int arr[10];
     int cnt = 0;
     int sum = 0;
-    bool sat = false;
-    int stop;
     for(int i = 0; i < 10; i++) {
         cin >> arr[i];
         if(arr[i] == 0) {
-            stop = i;
-            sat = true;
             break;
         }
-    }
-    if(sat == false) {
-        stop = 10;
-    }
-    for(int j = 0; j < stop; j++) {
-            if(arr[j] % 2 == 0) {
-                sum += arr[j];
-                cnt++;
-            }
+        if(arr[i] % 2 == 0) {
+            sum += arr[i];
+            cnt++;
         }
+    }
     cout << cnt << ' ' << sum;
     return 0;
 }
