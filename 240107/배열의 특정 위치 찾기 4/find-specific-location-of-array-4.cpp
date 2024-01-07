@@ -5,18 +5,20 @@ int main() {
     int arr[10];
     int cnt = 0;
     int sum = 0;
+    int stop;
     for(int i = 0; i < 10; i++) {
         cin >> arr[i];
         if(arr[i] == 0) {
-            for(int j = 0; j < i; j++) {
-                if(arr[j] % 2 == 0) {
-                    sum += arr[j];
-                    cnt++;
-                }
-            }
-            cout << cnt << ' ' << sum;
+            stop = i;
             break;
         }
     }
+    for(int j = 0; j < stop; j++) {
+            if(arr[j] % 2 == 0) {
+                sum += arr[j];
+                cnt++;
+            }
+        }
+    cout << cnt << ' ' << sum;
     return 0;
 }
