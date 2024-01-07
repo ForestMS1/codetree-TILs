@@ -12,7 +12,7 @@ int main() {
         if(i % 2 == 0) {
             sum1 += a[i];
         }
-        else if(i % 3 == 0) {
+        if(i % 3 == 0) {
             sum2 += a[i];
             cnt++;
         }
