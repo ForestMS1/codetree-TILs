@@ -17,7 +17,7 @@ int main() {
         for(int j = 0; j < i+1; j++) {
             cout << " ";
         }
-        for(int j = 0; j < n-2*i; j++) {
+        for(int j = 0; j < (2*n)-(2*i)-3; j++) {
             cout << "*";
         }
         cout << '\n';
