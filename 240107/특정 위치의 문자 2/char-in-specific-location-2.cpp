@@ -5,7 +5,7 @@ int main() {
     char x[10];
     for(int i = 0; i < 10; i++) {
         cin >> x[i];
-        if(i == 2 || i == 5 || i == 8) {
+        if(i == 1 || i == 4 || i == 7) {
             cout << x[i] << " ";
         }
     }
