@@ -9,8 +9,6 @@ int main() {
     int count_arr[10] ={};
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
-    }
-    for(int i = 0; i < n; i++) {
         count_arr[arr[i]]++;
     }
     for(int i = 1; i <= 9; i++) {
