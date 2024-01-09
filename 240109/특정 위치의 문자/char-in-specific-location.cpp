@@ -12,7 +12,7 @@ int main() {
         }
     }
     if(idx == -1) {
-        cout << 0;
+        cout << "None";
     }
     else {
         cout << idx;
