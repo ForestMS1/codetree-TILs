@@ -12,23 +12,20 @@ int main() {
     for(int i = 1; i <= n2; i++) {
         cin >> B[i];
     }
-    bool x = false;
-    for(int i = 1; i <= n1-n2+1; i++) {
-        x = false;
+    bool x = true;
+    for(int i = 1; i <= n1; i++) {
         for(int j = 1; j <= n2; j++) {
-            if(A[i+j-1] == B[j]) {
-                x = true;
+            if(i+j-1 > n1) {
+                x = false;
+                break;
             }
-            else {
+            if(A[i+j-1] != B[j]) {
                 x = false;
             }
         }
-        if(x == true) {
-            break;
-        }
     }
 
-    if(x) {
+    if(x == true) {
         cout << "Yes";
     }
     else {
