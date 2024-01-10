@@ -12,9 +12,8 @@ int main() {
     for(int i = 0; i < n2; i++) {
         cin >> B[i];
     }
-    bool x = true;
     for(int i = 0; i < n1; i++) {
-        x = true;
+        bool x = true;
         for(int j = 0; j < n2; j++) {
             if(i+j >= n1) {
                 x = false;
@@ -25,13 +24,11 @@ int main() {
                 break;
             }
         }
+        if(x) {
+            cout << "Yes";
+            return 0;
+        }
     }
-
-    if(x == true) {
-        cout << "Yes";
-    }
-    else {
-        cout << "No";
-    }
+    cout << "No";
     return 0;
 }
