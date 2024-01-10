@@ -19,7 +19,7 @@ int main() {
                 x = false;
                 break;
             }
-            if(A[i+j] != B[j]) {
+            else if(A[i+j] != B[j]) {
                 x = false;
                 break;
             }
