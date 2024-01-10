@@ -7,15 +7,17 @@ int main() {
     cin >> n;
     int arr[100];
     int max1 = INT_MIN;
+    int max1_idx;
     int max2 = INT_MIN;
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
         if(arr[i] > max1) {
             max1 = arr[i];
+            max1_idx = i;
         }
     }
     for(int i = 0; i < n; i++) {
-        if(arr[i] > max2 && arr[i] <= max1) {
+        if(arr[i] > max2 && i != max1_idx) {
             max2 = arr[i];
         }
     }
