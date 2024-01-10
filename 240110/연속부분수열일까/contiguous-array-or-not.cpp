@@ -14,6 +14,7 @@ int main() {
     }
     bool x = true;
     for(int i = 0; i < n1; i++) {
+        x = true;
         for(int j = 0; j < n2; j++) {
             if(i+j >= n1) {
                 x = false;
