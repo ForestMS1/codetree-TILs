@@ -16,10 +16,15 @@ int main() {
             cout << arr[arr_num] << '\n';
         }
         else if(num == 2) {
+            bool x = false;
             for(int j = 1; j <= n; j++) {
                 if(arr[j] == arr_num) {
                     cout << j << '\n';
+                    x = true;
                 }
+            }
+            if(x == false) {
+                cout << 0 << '\n';
             }
         }
         else if(num == 3) {
