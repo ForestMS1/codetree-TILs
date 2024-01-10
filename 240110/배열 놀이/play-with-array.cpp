@@ -21,6 +21,7 @@ int main() {
                 if(arr[j] == arr_num) {
                     cout << j << '\n';
                     x = true;
+                    break;
                 }
             }
             if(x == false) {
