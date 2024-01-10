@@ -12,7 +12,7 @@ int main() {
     for(int i = 1; i <= n2; i++) {
         cin >> B[i];
     }
-    bool x = false
+    bool x = false;
     for(int i = 1; i <= n1-n2+1; i++) {
         x = false;
         for(int j = 1; j <= n2; j++) {
