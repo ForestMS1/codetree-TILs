@@ -24,14 +24,13 @@ int main() {
         cout << 0;
         return 0;
     }
-    for(int i = min_idx; i < n; i++) {
+    for(int i = min_idx+1; i < n; i++) {
         if(car_price[i] > max_price) {
             max_price = car_price[i];
             max_idx = i;
         }
     }
-    if(max_idx >= min_idx){
-        cout << max_price - min_price;
-    }
+    cout << max_price - min_price;
+    
     return 0;
 }
