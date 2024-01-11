@@ -30,7 +30,7 @@ int main() {
             max_idx = i;
         }
     }
-    if(max_idx > min_idx){
+    if(max_idx >= min_idx){
         cout << max_price - min_price;
     }
     return 0;
