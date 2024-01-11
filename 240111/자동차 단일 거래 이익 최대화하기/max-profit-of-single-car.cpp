@@ -5,32 +5,21 @@ int main() {
     // 여기에 코드를 작성해주세요.
     int n;
     cin >> n;
-    int car_price[1000];
-    int max_price = INT_MIN;
-    int min_price = INT_MAX;
-    int max_idx, min_idx;
+    int price[1000];
     for(int i = 0; i < n; i++) {
-        cin >> car_price[i];
-        if(car_price[i] < min_price) {
-            min_price = car_price[i];
-            min_idx = i;
-        }
-        else if(car_price[i] == INT_MAX) {
-            min_price = car_price[i];
-            min_idx = i;
-        }
+        cin >> price[i];
     }
-    if(min_idx == n-1) {
-        cout << 0;
-        return 0;
-    }
-    for(int i = min_idx+1; i < n; i++) {
-        if(car_price[i] > max_price) {
-            max_price = car_price[i];
-            max_idx = i;
+    int max_profit = 0;
+    for(int i = 0; i < n; i++) {
+        for(int j = i + 1; j < n; j++) {
+            int profit = price[j] - price[i];
+            if(profit > max_profit) {
+                max_profit = profit;
+            }
         }
     }
-    cout << max_price - min_price;
+    cout << max_profit;
+
     
     return 0;
 }
