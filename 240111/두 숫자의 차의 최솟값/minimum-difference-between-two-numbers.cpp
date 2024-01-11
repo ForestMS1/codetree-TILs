@@ -12,12 +12,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         for(int j = i+1; j < n; j++) {
             int diff;
-            if(num[i] > num[j]) {
-                diff = num[i] - num[j];
-            }
-            else {
-                diff = num[j] - num[i];
-            }
+            diff = num[j] - num[i];
             if(diff < min_diff) {
                 min_diff = diff;
             }
