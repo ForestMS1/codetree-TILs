@@ -15,6 +15,10 @@ int main() {
             min_price = car_price[i];
             min_idx = i;
         }
+        else if(car_price[i] == INT_MAX) {
+            min_price = car_price[i];
+            min_idx = i;
+        }
     }
     if(min_idx == n-1) {
         cout << 0;
