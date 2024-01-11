@@ -16,17 +16,17 @@ int main() {
             min_idx = i;
         }
     }
+    if(min_idx == n-1) {
+        cout << 0;
+        return 0;
+    }
     for(int i = min_idx; i < n; i++) {
         if(car_price[i] > max_price) {
             max_price = car_price[i];
             max_idx = i;
         }
     }
-    if(min_idx == n-1) {
-        cout << 0;
-        return 0;
-    }
-    else if(max_idx > min_idx){
+    if(max_idx > min_idx){
         cout << max_price - min_price;
     }
     return 0;
