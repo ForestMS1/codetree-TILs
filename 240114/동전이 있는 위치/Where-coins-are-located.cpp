@@ -5,7 +5,7 @@ int main() {
     int n,m;
     cin >> n >> m;
     int r,c;
-    int arr[10][10];
+    int arr[10][10] = {};
     for(int i = 0; i < m; i++) {
         cin >> r >> c;
         arr[r][c] = 1;
