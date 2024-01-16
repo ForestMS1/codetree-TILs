@@ -19,6 +19,11 @@ int main() {
     cout << sec*2 << '\n';
     x = str[0];
 
+    if(str.length() == 1) {
+        cout << str[0] << 1;
+        return 0;
+    }
+
     for(int i = 1; i < str.length(); i++) {
         if(x == str[i]) {
             cnt++;
