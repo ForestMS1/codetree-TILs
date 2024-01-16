@@ -32,7 +32,7 @@ int main() {
             cnt = 1;
         }
         if(i == str.length()-1) {
-            cout << x <<cnt;
+            cout << str[i] <<cnt;
         }
         x = str[i];
     }
