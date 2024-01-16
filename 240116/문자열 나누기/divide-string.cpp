@@ -6,15 +6,16 @@ int main() {
     int n;
     cin >> n;
     string str[10];
-    string ans = "1";
+    string ans = "";
     int cnt = 0;
     for(int i = 0; i < n; i++) {
         cin >> str[i];
         ans += str[i];
     }
-    for(int i = 1; i <= ans.length(); i++) {
+    for(int i = 0; i < ans.length(); i++) {
         cout << ans[i];
-        if(i % 5 == 0) {
+        cnt++;
+        if(cnt % 5 == 0) {
             cout << '\n';
         }
     }
