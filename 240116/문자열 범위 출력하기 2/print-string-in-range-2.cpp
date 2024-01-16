@@ -7,7 +7,7 @@ int main() {
     int n;
     cin >> str >> n;
     int cnt = 0;
-    for(int i = str.length()-1; cnt < 11; i--) {
+    for(int i = str.length()-1; cnt < n; i--) {
         cout << str[i];
         cnt++;
     }
