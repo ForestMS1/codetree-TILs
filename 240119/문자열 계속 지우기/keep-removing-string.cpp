@@ -20,6 +20,7 @@ int main() {
             if(same) {
                 A.erase(i,len_B);
                 i = 0;
+                len_A = A.length();
             }
         }
     }
