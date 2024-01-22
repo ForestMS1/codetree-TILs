@@ -2,7 +2,7 @@
 using namespace std;
 bool find369(int n) {
     while(n%10 != 0) {
-        if(n%10 == 3 || n%10 == 6 || n%10 ==9) {
+        if((n%10 != 0) && (n%10 == 3 || n%10 == 6 || n%10 ==9)) {
             return true;
         }
         n = n/10;
