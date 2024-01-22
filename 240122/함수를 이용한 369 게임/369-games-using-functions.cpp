@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 bool find369(int n) {
-    while(n%10 != 0) {
+    while(n != 0) {
         if((n%10 != 0) && (n%10 == 3 || n%10 == 6 || n%10 ==9)) {
             return true;
         }
