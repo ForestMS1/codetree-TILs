@@ -8,6 +8,7 @@ bool IsCon(int *A, int *B, int n1, int n2) {
         for(int j = 0; j < n2; j++) {
             if(A[i+j] != B[j]) {
                 tmp = false;
+                break;
             }
         }
         if(tmp) {
