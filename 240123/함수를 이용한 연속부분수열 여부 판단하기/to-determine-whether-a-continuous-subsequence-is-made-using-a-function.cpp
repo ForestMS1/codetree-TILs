@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool IsCon(int *A, int *B, int n1, int n2) {
+bool IsSame(int *A, int *B, int n1, int n2) {
     bool tmp;
     for(int i = 0; i < n1; i++) {
         tmp = true;
@@ -31,7 +31,7 @@ int main() {
     for(int i = 0; i < n2; i++) {
         cin >> B[i];
     }
-    if(IsCon(A,B,n1,n2)) {
+    if(IsSame(A,B,n1,n2)) {
         cout << "Yes";
     }
     else {
