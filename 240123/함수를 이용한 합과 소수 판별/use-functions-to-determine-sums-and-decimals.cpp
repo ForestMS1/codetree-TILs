@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool IsDecimal(int n) {
+bool IsPrime(int n) {
     if(n == 1) {
         return false;
     }
@@ -34,7 +34,7 @@ int main() {
     cin >> a >> b;
     int cnt = 0;
     for(int i = a; i <= b; i++) {
-        if(IsDecimal(i) && AllEven(i)) {
+        if(IsPrime(i) && AllEven(i)) {
             cnt++;
         }
     }
