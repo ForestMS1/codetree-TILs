@@ -19,6 +19,7 @@ int exist_substr(string &is, string &ps) {
         }
         if(is_sub) {
             idx = i;
+            break;
         }
     }
 
