@@ -26,6 +26,9 @@ int lcmTwonum(int a, int b) {
 }
 
 int lcm(int n) {
+    if(n == 1) {
+        return arr[0];
+    }
     if(n == 2) {
         return lcmTwonum(arr[0],arr[1]);
     }
