@@ -3,7 +3,7 @@
 using namespace std;
 
 void printmidnum(int *x, int n) {
-    sort(x,x+n);
+    sort(x,x+n+1);
     cout << x[n/2+1] << ' ';
 }
 
