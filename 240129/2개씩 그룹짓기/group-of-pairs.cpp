@@ -18,13 +18,15 @@ int main() {
 
     sort(arr,arr+count_num);
 
-    int min_sum[1000];
+    int min_sum = 0;
     for(int i = 0; i < count_num; i++) {
-        min_sum[i] = arr[i] + arr[count_num-1-i];
+        int group_sum = arr[i] + arr[count_num-1-i];
+        if(min_sum < group_sum) {
+            min_sum = group_sum;
+        }
     }
 
-    sort(min_sum, min_sum+N);
-    cout << min_sum[N-1];
+    cout << min_sum;
     
     return 0;
 }
