@@ -26,30 +26,18 @@ int main() {
     cin >> n;
     
     string name, street_num, region;
-    int max = 96;
-    int max_idx;
+    int last_idx = 0;
 
     for(int i = 0; i < n; i++) {
         cin >> name >> street_num >> region;
         p[i] = person(name,street_num,region);
-        if((int)name[0] > max) {
-            max = (int)name[0];
-            max_idx = i;
-        }
-
-        else if((int)name[0] == max) {
-            for(int j = 1; j <= name.length(); j++) {
-                if((int)name[j] > max) {
-                    max = (int)name[j];
-                    max_idx = i;
-                    break;
-                }
-            }
+        if(p[i].name > p[last_idx].name) {
+            last_idx = i;
         }
     }
 
-    cout << "name " << p[max_idx].name << '\n';
-    cout << "addr " << p[max_idx].street_num << '\n';
-    cout << "city " << p[max_idx].region << '\n';
+    cout << "name " << p[last_idx].name << '\n';
+    cout << "addr " << p[last_idx].street_num << '\n';
+    cout << "city " << p[last_idx].region << '\n';
     return 0;
 }
