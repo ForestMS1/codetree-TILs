@@ -36,6 +36,16 @@ int main() {
             max = (int)name[0];
             max_idx = i;
         }
+
+        else if((int)name[0] == max) {
+            for(int j = 1; j < name.length(); j++) {
+                if((int)name[j] > max) {
+                    max = (int)name[j];
+                    max_idx = i;
+                    break;
+                }
+            }
+        }
     }
 
     cout << "name " << p[max_idx].name << '\n';
