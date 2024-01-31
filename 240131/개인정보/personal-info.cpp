@@ -44,14 +44,15 @@ int main() {
     }
 
     sort(human, human+N, cmp_name);
+    
+    cout << fixed;
+    cout.precision(1);
 
     cout << "name\n";
     for(int i = 0; i < N; i++)
     {
         cout << human[i].name << ' ';
         cout << human[i].height << ' ';
-        cout << fixed;
-        cout.precision(1);
         cout << human[i].weight << '\n';
     }
 
