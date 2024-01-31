@@ -50,6 +50,8 @@ int main() {
     {
         cout << human[i].name << ' ';
         cout << human[i].height << ' ';
+        cout << fixed;
+        cout.precision(1);
         cout << human[i].weight << '\n';
     }
 
