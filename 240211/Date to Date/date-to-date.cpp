@@ -20,6 +20,11 @@ int main() {
     }
 
     int ans = (m2_days + d2) - (m1_days + d1);
+    if(ans == 0)
+    {
+        cout << 1;
+        return 0;
+    }
 
     cout << ans;
     return 0;
