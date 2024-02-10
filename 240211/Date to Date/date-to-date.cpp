@@ -8,7 +8,18 @@ int main() {
 
     cin >> m1 >> d1 >> m2 >> d2;
 
-    int ans = (num_of_days[m2] + d2) - (num_of_days[m1] + d1);
+    int m1_days = 0;
+    for(int i = 1; i <= m1; i++)
+    {
+        m1_days += num_of_days[i];
+    }
+    int m2_days = 0;
+    for(int i = 1; i <= m2; i++)
+    {
+        m2_days += num_of_days[i];
+    }
+
+    int ans = (m2_days + d2) - (m1_days + d1);
 
     cout << ans;
     return 0;
