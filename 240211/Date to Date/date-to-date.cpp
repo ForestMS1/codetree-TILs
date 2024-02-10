@@ -9,12 +9,12 @@ int main() {
     cin >> m1 >> d1 >> m2 >> d2;
 
     int m1_days = 0;
-    for(int i = 1; i <= m1; i++)
+    for(int i = 1; i < m1; i++)
     {
         m1_days += num_of_days[i];
     }
     int m2_days = 0;
-    for(int i = 1; i <= m2; i++)
+    for(int i = 1; i < m2; i++)
     {
         m2_days += num_of_days[i];
     }
