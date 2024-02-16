@@ -28,7 +28,7 @@ int main() {
 
     int diff = trs(m2,d2) - trs(m1,d1);
 
-    for(int i = 0; i < diff; i++)
+    for(int i = 0; i <= diff; i++)
     {
         if(day[idx].compare(days) == 0)
         {
