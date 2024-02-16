@@ -2,33 +2,8 @@
 #include <vector>
 using namespace std;
 
-int md[13] ={0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int md[13] ={0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 string day[7] = {"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};
-
-//어느것이 더 뒤에 날짜지?
-bool max_pair(const pair<int,int> &p1, const pair<int,int> &p2)
-{
-    if(p1.first > p2.first)
-    {   
-        //앞의 인자가 크면 참
-        return true;
-    }
-    else if(p1.first < p2.first)
-    {
-        return false;
-    }
-    else if(p1.first == p2.first)
-    {
-        if(p1.second > p2.second)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-}
 
 int main() {
     // 여기에 코드를 작성해주세요.
@@ -91,7 +66,7 @@ int main() {
                 {
                     day_idx = 6;
                 }
-                if(p1.second < 0)
+                if(p1.second == 0)
                 {   
                     p1.first--;
                     p1.second = md[p1.first];
