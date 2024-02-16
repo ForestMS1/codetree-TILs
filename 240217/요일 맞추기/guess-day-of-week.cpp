@@ -77,6 +77,7 @@ int main() {
             else if (p1.second == p2.second)
             {
                 day_idx = 1;
+                break;
             }
         }
         //2. m1 > m2 인 경우
