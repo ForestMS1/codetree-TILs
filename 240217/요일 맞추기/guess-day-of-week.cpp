@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int md[13] ={0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+int md[13] ={0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 string day[7] = {"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};
 
 //어느것이 더 뒤에 날짜지?
