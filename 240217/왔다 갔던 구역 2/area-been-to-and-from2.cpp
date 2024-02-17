@@ -11,6 +11,7 @@ int main() {
     int pos = 1000;
     int x;
     char dir;
+
     for(int i = 0; i < n; i++)
     {
         cin >> x >> dir;
@@ -18,8 +19,8 @@ int main() {
         {
             for(int j = 0; j < x; j++)
             {
-                pos++;
                 line[pos]++;
+                pos++;
             }
         }
         else {
