@@ -16,7 +16,7 @@ int main() {
     {
         for(int j = y1; j < y2; j++)
         {
-            coor[i][j]++;
+            coor[i][j] = 1;
         }
     }
 
@@ -29,7 +29,7 @@ int main() {
     {
         for(int j = y1; j < y2; j++)
         {
-            coor[i][j]++;
+            coor[i][j] = 2;
         }
     }
 
@@ -42,7 +42,7 @@ int main() {
     {
         for(int j = y1; j < y2; j++)
         {
-            coor[i][j] += 2;
+            coor[i][j] = 3;
         }
     }
 
