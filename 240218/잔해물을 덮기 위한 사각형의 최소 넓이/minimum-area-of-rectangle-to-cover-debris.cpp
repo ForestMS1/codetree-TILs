@@ -12,9 +12,9 @@ int main() {
     y1 += 1000;
     y2 += 1000;
 
-    for(int i = x1; i < x2; i++)
+    for(int i = x1; i <= x2; i++)
     {
-        for(int j = y1; j < y2; j++)
+        for(int j = y1; j <= y2; j++)
         {
             map[i][j] = 1;
         }
@@ -26,17 +26,17 @@ int main() {
     y1 += 1000;
     y2 += 1000;
 
-    for(int i = x1; i < x2; i++)
+    for(int i = x1; i <= x2; i++)
     {
-        for(int j = y1; j < y2; j++)
+        for(int j = y1; j <= y2; j++)
         {
             map[i][j] = 0;
         }
     }
 
-    int max_x = 0;
+    int max_x = -3000;
     int min_x = 3000;
-    int max_y = 0;
+    int max_y = -3000;
     int min_y = 3000;
     for(int i = 0; i < 2001; i++)
     {
@@ -64,7 +64,11 @@ int main() {
         }
     }
 
-    int area = (max_x - min_x+1) * (max_y - min_y+1);
+    int area = (max_x - min_x) * (max_y - min_y);
+    if(area == 6000 * 6000)
+    {
+        area = 0;
+    }
     cout << area;
     return 0;
 }
