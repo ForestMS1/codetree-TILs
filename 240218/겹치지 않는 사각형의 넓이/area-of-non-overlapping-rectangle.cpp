@@ -51,7 +51,7 @@ int main() {
     {
         for(int j = 0; j <= 2000; j++)
         {
-            if(coor[i][j] == 1)
+            if(coor[i][j] != 0 && coor[i][j] != 3)
             {
                 area++;
             }
