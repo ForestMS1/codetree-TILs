@@ -38,12 +38,14 @@ int main() {
     int min_x = 3000;
     int max_y = -3000;
     int min_y = 3000;
+    bool exis = false;
     for(int i = 0; i < 2001; i++)
     {
         for(int j = 0; j < 2001; j++)
         {
             if(map[i][j] == 1)
             {
+                exis = true;
                 if(max_x < i)
                 {
                     max_x = i+1;
@@ -65,7 +67,7 @@ int main() {
     }
 
     int area = (max_x - min_x) * (max_y - min_y);
-    if(area == 6000 * 6000)
+    if(exis == false)
     {
         area = 0;
     }
