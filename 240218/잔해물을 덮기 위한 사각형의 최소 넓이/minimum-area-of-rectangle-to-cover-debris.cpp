@@ -26,9 +26,9 @@ int main() {
     y1 += 1000;
     y2 += 1000;
 
-    for(int i = x1; i < x2; i++)
+    for(int i = x1; i <= x2; i++)
     {
-        for(int j = y1; j < y2; j++)
+        for(int j = y1; j <= y2; j++)
         {
             map[i][j] = 0;
         }
