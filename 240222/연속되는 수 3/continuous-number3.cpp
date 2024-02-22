@@ -3,32 +3,6 @@ using namespace std;
 
 int arr[1000];
 
-bool diff(int bef, int aft)
-{
-    if(bef < 0)
-    {
-        if(aft > 0)
-        {
-            return true; //부호다름
-        }
-        else
-        {
-            return false;//부호같음
-        }
-    }
-    else
-    {
-        if(aft < 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-}
-
 int main() {
     // 여기에 코드를 작성해주세요.
     int N;
@@ -47,11 +21,11 @@ int main() {
             continue;
         }
 
-        else if(diff(arr[i-1],arr[i]) == false)
+        else if(arr[i-1] * arr[i] > 0)
         {
             cnt++;
         }
-        else if(diff(arr[i-1],arr[i]) == true)
+        else if(arr[i-1] * arr[i] < 0)
         {
             cnt = 1;
         }
