@@ -12,8 +12,11 @@ int main() {
     for(int i = 0; i < N; i++)
     {
         cin >> arr[i];
-
-        if(i == 0 || arr[i-1] == arr[i])
+        if(i == 0)
+        {
+            continue;
+        }
+        if(arr[i-1] == arr[i])
         {
             cnt++;
         }
