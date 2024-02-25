@@ -54,17 +54,17 @@ int main() {
     }
 
     int max = 0;
-    if(N > M)
+    if(A_time > B_time)
     {
-        max = N;
+        max = A_time;
     }
     else
     {
-        max = M;
+        max = B_time;
     }
 
     int ans = -1;
-    for(int i = 1; i < 2000001; i++)
+    for(int i = 1; i <= max; i++)
     {
         if(A[i] == B[i])
         {
