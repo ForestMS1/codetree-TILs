@@ -20,7 +20,7 @@ int main() {
         sum_t += t;
         for(int j = 0; j < t; j++)
         {
-            A[++A_time] = v;
+            A[++A_time] += v;
         }
     }
 
