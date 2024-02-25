@@ -3,9 +3,7 @@ using namespace std;
 
 int A[1000000]; //인덱스=시간 / 값=위치
 int B[1000000];
-int A_point = 0;
 int A_time = 0;
-int B_point = 0;
 int B_time = 0;
 
 
@@ -22,7 +20,7 @@ int main() {
         sum_t += t;
         for(int j = 0; j < t; j++)
         {
-            A[++A_time] = A_point + v;
+            A[++A_time] = v;
         }
     }
 
@@ -32,7 +30,7 @@ int main() {
 
         for(int j = 0; j < t; j++)
         {
-            B[++B_time] += B_point + v;
+            B[++B_time] += v;
         }
     }
 
@@ -49,13 +47,9 @@ int main() {
         {
             first[i] = 'B';
         }
-        else if(first[i-1] != '0' && A[i] == B[i])
+        else if(A[i] == B[i])
         {
             first[i] = first[i-1];
-        }
-        else if(first[i-1] == '0' && A[i] == B[i])
-        {
-            first[i] = '0';
         }
     }
 
