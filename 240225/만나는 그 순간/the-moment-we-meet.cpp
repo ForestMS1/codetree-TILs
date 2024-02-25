@@ -72,7 +72,6 @@ int main() {
             break;
         }
     }
-
     cout << ans;
     return 0;
 }
