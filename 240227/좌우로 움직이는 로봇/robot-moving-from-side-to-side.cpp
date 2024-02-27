@@ -58,11 +58,19 @@ int main() {
     int max = 0;
     if(A_time > B_time)
     {
-        max = B_time;
+        max = A_time;
+        while(B_time != max)
+        {
+            B[B_time++] = B_pos;
+        }
     }
     else
     {
-        max = A_time;
+        max = B_time;
+        while(A_time != max)
+        {
+            A[A_time++] = A_pos;
+        }
     }
 
     int cnt = 0;
