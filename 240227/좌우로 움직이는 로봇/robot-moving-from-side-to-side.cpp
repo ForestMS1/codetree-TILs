@@ -58,11 +58,11 @@ int main() {
     int max = 0;
     if(A_time > B_time)
     {
-        max = A_time;
+        max = B_time;
     }
     else
     {
-        max = B_time;
+        max = A_time;
     }
 
     int cnt = 0;
