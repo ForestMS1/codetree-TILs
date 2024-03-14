@@ -18,11 +18,11 @@ int main() {
         switch(com[i])
         {
             case 'R':
-            dir = (++dir) % 4;
+            dir = (dir+1) % 4;
             break;
 
             case 'L':
-            dir = (--dir) % 4;
+            dir = (dir+3) % 4;
             break;
 
             case 'F':
