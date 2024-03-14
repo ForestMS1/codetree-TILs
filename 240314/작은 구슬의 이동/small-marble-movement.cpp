@@ -35,6 +35,10 @@ void change_dir()
         flow_t++;
         return;
     }
+    else
+    {
+        return;
+    }
 };
 
 int main() {
