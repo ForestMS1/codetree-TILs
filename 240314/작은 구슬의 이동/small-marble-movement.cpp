@@ -45,7 +45,7 @@ int main() {
     // 여기에 코드를 작성해주세요.
     cin >> n >> t;
     cin >> r >> c >> d;
-
+    change_dir();
     while(flow_t != t)
     {
         if(d=='U')
