@@ -3,7 +3,7 @@
 #include <cstdlib>
 using namespace std;
 
-int min_dist = 2,147,483,647;
+int min_dist = 2147483647;
 int house[101]; //1~100
 int main() {
     // 여기에 코드를 작성해주세요.
