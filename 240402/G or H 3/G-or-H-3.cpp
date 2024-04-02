@@ -23,6 +23,25 @@ int main() {
 
     int sum = 0;
     int max_sum = 0;
+    if(max_pos < K)
+    {
+        for(int i = 0; i <= max_pos; i++)
+        {
+            if(pos[i] == 'G')
+            {
+                sum += 1;
+            }
+            if(pos[i] == 'H')
+            {
+                sum += 2;
+            }
+        }
+        if(sum > max_sum)
+        {
+            max_sum = sum;
+        }
+        sum = 0;
+    }
     for(int i = 1; i <= max_pos-K; i++)
     {
         for(int j = i; j <= i+K; j++)
