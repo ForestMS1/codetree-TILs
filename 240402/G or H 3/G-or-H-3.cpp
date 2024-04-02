@@ -23,7 +23,7 @@ int main() {
 
     int sum = 0;
     int max_sum = 0;
-    for(int i = 1; i <= max_pos; i++)
+    for(int i = 1; i <= max_pos-K; i++)
     {
         for(int j = i; j <= i+K; j++)
         {
